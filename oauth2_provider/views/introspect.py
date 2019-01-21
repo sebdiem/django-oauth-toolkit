@@ -6,7 +6,7 @@ from django.http import HttpResponse
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 
-from oauth2_provider.models import get_access_token_model
+from oauth2_provider.abstract_models import get_access_token_model
 from oauth2_provider.views import ScopedProtectedResourceView
 
 

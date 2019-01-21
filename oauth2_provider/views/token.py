@@ -2,7 +2,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.views.generic import DeleteView, ListView
 
-from ..models import get_access_token_model
+from ..abstract_models import get_access_token_model
 
 
 class AuthorizedTokensListView(LoginRequiredMixin, ListView):

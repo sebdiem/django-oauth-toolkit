@@ -5,7 +5,7 @@ from django.views.generic import (
     CreateView, DeleteView, DetailView, ListView, UpdateView
 )
 
-from ..models import get_application_model
+from ..abstract_models import get_application_model
 
 
 class ApplicationOwnerIsUserMixin(LoginRequiredMixin):

@@ -12,7 +12,7 @@ from django.views.generic import FormView, View
 from ..exceptions import OAuthToolkitError
 from ..forms import AllowForm
 from ..http import OAuth2ResponseRedirect
-from ..models import get_access_token_model, get_application_model
+from ..abstract_models import get_access_token_model, get_application_model
 from ..scopes import get_scopes_backend
 from ..settings import oauth2_settings
 from ..signals import app_authorized

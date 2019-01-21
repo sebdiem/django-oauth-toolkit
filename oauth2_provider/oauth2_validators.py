@@ -17,7 +17,7 @@ from django.utils.translation import ugettext_lazy as _
 from oauthlib.oauth2 import RequestValidator
 
 from .exceptions import FatalClientError
-from .models import (
+from .abstract_models import (
     AbstractApplication, get_access_token_model,
     get_application_model, get_grant_model, get_refresh_token_model
 )
